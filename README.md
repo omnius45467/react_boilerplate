@@ -1,5 +1,4 @@
-# geekbook
-Geekwise ReactJS class Facebook clone
+
 
 ```bash
 $ npm install
