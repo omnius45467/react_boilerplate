@@ -1,18 +1,34 @@
 import React from 'react'
 import { render } from 'react-dom'
+import { Router, Route, browserHistory } from 'react-router'
 import '~/app/assets/styles/app'
+import Nav from './components/nav'
+import Content from './content'
+import Footer from './components/footer'
 
 class App extends React.Component {
   render() {
-    const { children } = this.props
+    const { children } = this.props;
 
     return (
       <div className='container'>
-        Hello World
-        { children }
+        <div className="row">
+            <div className="col-md-12">
+                <Nav/>
+                <Content/>
+                { children }
+                <Footer/>
+            </div>
+        </div>
+
       </div>
     )
   }
 }
+render((
+    <Router history={browserHistory}>
+        <Route path="/" component={App}>
 
-render(<App />, document.getElementById('react'))
+        </Route>
+    </Router>
+), document.getElementById('app'));
