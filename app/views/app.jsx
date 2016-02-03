@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 import { Router, Route, browserHistory } from 'react-router'
 import '~/app/assets/styles/app'
 import Nav from './components/nav'
-import Content from './content'
+import Content from './components/content'
 import Footer from './components/footer'
 
 class App extends React.Component {

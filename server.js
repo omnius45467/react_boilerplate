@@ -21,7 +21,6 @@ function renderPage() {
     <html>
       <head>
         <title>Company Name</title>
-        <link rel="shortcut icon" type="image/png" href="/app/assets/images/favicon.ico">
       </head>
       <body>
         <div id="app"></div>
